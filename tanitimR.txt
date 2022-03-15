@@ -1,0 +1,94 @@
+###Temel islemler
+1+4
+5*9
+3^2
+37%%5
+
+###yardım
+?var
+help(var)
+help(mean)
+
+### atama operatoru
+a <- 5
+b<-10
+x<-c(1,2,3,7,8,9)
+y<-x+10;y
+
+###calisma alanındaki kayitli nesneler
+ls()
+
+###grafik
+plot(x)
+plot(y)
+par(mfrow=c(1,1))
+
+
+### mantiksal operatorler
+4<5
+TRUE==FALSE
+TRUE!=FALSE  
+5<=6
+4<=3  
+  
+###nesne olusturma
+tamsayi<-2L
+sayi<-2
+ondalik<-2.5
+karakter<- "modelleme"
+mantiksal<- TRUE
+
+###nesne turu sorgulama
+typeof(tamsayi)
+typeof(sayi)
+typeof(ondalik)
+typeof(karakter)
+typeof(mantiksal)
+
+#class
+##########
+mode(tamsayi)
+mode(sayi)
+mode(ondalik)
+
+
+
+
+is.double(sayi)
+is.numeric(sayi)
+is.integer(sayi)
+
+
+
+###paket yukleme###
+install.packages("GGally")
+install.packages("pracma")
+
+library(GGally)
+library(pracma)
+
+
+
+
+
+###veri okutma
+##1.yol
+karacam<-read.csv(file.choose(),header=TRUE, sep=";")
+
+
+##2.yol
+karacam2<-read.csv("F:/modelleme/veri/Semra_Türkan_Veri/karacam.csv", sep = ";")
+karacam<- read.csv("F:\\modelleme\\veri\\Semra_Türkan_Veri\\karacam.csv", sep = ";")
+
+head(karacam,4)
+
+attach(karacam)
+
+
+
+mean(bonitet)
+
+mean(karacam$bonitet)
+
+rm(list=ls())
+View(x18)
