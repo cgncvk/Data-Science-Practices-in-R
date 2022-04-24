@@ -77,8 +77,8 @@ karacam<-read.csv(file.choose(),header=TRUE, sep=";")
 
 
 ##2.yol
-karacam2<-read.csv("F:/modelleme/veri/Semra_Türkan_Veri/karacam.csv", sep = ";")
-karacam<- read.csv("F:\\modelleme\\veri\\Semra_Türkan_Veri\\karacam.csv", sep = ";")
+karacam2<-read.csv("F:/modelleme/veri/Veri/karacam.csv", sep = ";")
+karacam<- read.csv("F:\\modelleme\\veri\\Veri\\karacam.csv", sep = ";")
 
 head(karacam,4)
 
